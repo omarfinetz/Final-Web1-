@@ -1,0 +1,231 @@
+
+body {
+  background-color: #36454F;
+
+}
+
+.containerblog {  display: grid;
+    grid-template-columns: 5fr 1fr 9fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "nav page blogpost"
+      "nav page blogpost"
+      "nav page blogpost";
+  }
+  
+  .nav { grid-area: nav; 
+
+    background-image:url("https://images.pexels.com/photos/2385210/pexels-photo-2385210.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"); height: 1000px;
+    
+}
+  
+  .page { grid-area: page; 
+
+background-color: lightgrey;
+
+}
+.arrow {
+
+width: 300px;
+height: 300px;
+
+}
+  
+  .blogpost { grid-area: blogpost; 
+  background-color: white;
+  }
+  
+table {
+
+  background-color: black;
+border-color: white;
+}
+
+td {
+  padding-left: 70px;
+  color: 	#E0B0FF;
+  font-size: 21px; 
+}
+
+td:link {
+  color: #7b03cb; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+td:visited {
+  color: #ff1493;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+
+.disc {
+
+  color: white;
+  font-style: oblique;
+  text-align: center;
+  font-size: medium;
+  
+
+}
+
+.sidebar {
+
+    width: 320px;
+    padding: 10px;
+    border: 5px solid white;
+    margin-top: 400px;
+    margin-left: 100px;
+    background-color: black;
+    border-radius: 8px;
+  
+}
+
+.post {
+  border: 3px solid black;
+  border-radius: 8px;
+}
+
+.exarmbanner {
+
+width: 60%;
+height: 50%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+td {
+
+ font-family:  "Lucida Console", "Courier New", monospace;
+
+}
+
+.disc {
+
+font-family: "Lucida Console", "Courier New", monospace;
+
+}
+
+.bold {
+
+  font-size: large;
+ padding-left: 3px;
+}
+
+.ex {
+  padding-left: 5px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 13px;
+}
+
+.exheader {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.exgif {
+  align-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cover {
+width: 30%;
+height: 50%;
+}
+
+.panelex {
+width: 550px;
+height: 350px;
+}
+
+.mangaex {
+flex-wrap:inherit
+}
+
+.clash {
+  align-content: center;
+  width: 350px;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*-------------------homepage below-----------------------------*/
+
+.containerhome {
+  display: grid; 
+  grid-template-columns: 2.4fr 3.4fr 2.7fr; 
+  grid-template-rows: 0.2fr 2.2fr 0.1fr 3.8fr 1.2fr; 
+  gap: 2px 4px; 
+  grid-template-areas: 
+    ". . ."
+    "homebanner homebanner homebanner"
+    ". . ."
+    "homeblog homeblog homenav"
+    "homeblog homeblog homenav"; 
+}
+.homeblog { grid-area: homeblog; 
+background-color: white;
+border-radius: 15px;
+}
+
+.intro {
+border-bottom: #7b03cb;
+border-width: 3px;
+}
+
+.luckybio {
+
+text-align: center;
+font-family:"Lucida Console", "Courier New", monospace;
+font-size: medium;
+
+}
+
+.homebanner { grid-area: homebanner;
+background-color: white;
+border-bottom: #E0B0FF; 
+border-width: 4px;
+border-radius: 15px;
+align-items: center;
+}
+
+.bannerlucky {
+
+  size: 250%;
+  border-radius: 10px;
+  }
+  
+.homenav { grid-area: homenav; 
+
+background-color: white;
+
+}
+
+button {
+align-content: center;
+width: 480px;
+background-color: 	#8A2BE2;
+border: 	#8A2BE2;
+color: white;
+font-family:"Lucida Console", "Courier New", monospace;
+display:block;
+padding: 14px 30px;
+text-align: center;
+font-size: 20px;
+margin-bottom: 2px;
+margin-top: 2px;
+
+}
+
+
+
+
