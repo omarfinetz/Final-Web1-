@@ -21,18 +21,23 @@ body {
     
 }
   
-  .page { grid-area: page; 
-
-background-color: lightgrey;
-
+  .page { 
+grid-area: page; 
+margin-top: 250px;
 }
+
 .arrow {
 
-width: 100px;
-height: 100px;
+width: 76px;
+height: 76px;
 
 }
-  
+
+.arrow.purple:hover{
+  border-color: purple;
+  box-shadow: #E0B0FF;
+}
+
   .blogpost { grid-area: blogpost; 
   background-color: white;
   }
@@ -174,7 +179,7 @@ flex-wrap:inherit
 }
 .homeblog { grid-area: homeblog; 
 background-color: white;
-border-radius: 15px;
+
 }
 
 .intro {
@@ -191,7 +196,6 @@ font-size: medium;
 }
 
 .homebanner { grid-area: homebanner;
-background-color: white;
 border-bottom: #E0B0FF; 
 border-width: 4px;
 border-radius: 15px;
@@ -207,7 +211,7 @@ align-items: center;
 .homenav { grid-area: homenav; 
 
 background-color: white;
-
+margin: 3px;
 }
 
 button {
@@ -226,6 +230,28 @@ margin-top: 2px;
 
 }
 
+ul{
+  font-family: 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
+  
 
+}
+
+/*---------------About Section Below----------------*/
+
+.container {  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 3fr 3fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 1.5fr 2fr 1.5fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+}
+
+.about-top { grid-area: 2 / 2 / 3 / 6; }
+
+.about-body { grid-area: 3 / 2 / 6 / 6; }
+
+.about-image { grid-area: 3 / 2 / 5 / 4; }
+
+.about-text { grid-area: 3 / 4 / 6 / 6; }
 
 
