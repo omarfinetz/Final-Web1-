@@ -178,8 +178,11 @@ flex-wrap:inherit
     "homeblog homeblog homenav"; 
 }
 .homeblog { grid-area: homeblog; 
-background-color: white;
-
+background-color: black;
+border-radius: 15px;
+border-style: solid;
+border-color: white;
+border-width: 3px;
 }
 
 .intro {
@@ -192,13 +195,13 @@ border-width: 3px;
 text-align: center;
 font-family:"Lucida Console", "Courier New", monospace;
 font-size: medium;
+color: white;
 
 }
 
 .homebanner { grid-area: homebanner;
 border-bottom: #E0B0FF; 
 border-width: 4px;
-border-radius: 15px;
 align-items: center;
 }
 
@@ -210,15 +213,19 @@ align-items: center;
   
 .homenav { grid-area: homenav; 
 
-background-color: white;
+  background-color: black;
+  border-width: 3px;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: white;
 margin: 3px;
 }
 
 button {
 align-content: center;
 width: 480px;
-background-color: 	#8A2BE2;
-border: 	#8A2BE2;
+background-color: 	#E0B0FF;
+border: 	#E0B0FF;
 color: white;
 font-family:"Lucida Console", "Courier New", monospace;
 display:block;
@@ -230,12 +237,50 @@ margin-top: 2px;
 
 }
 
+.linkhome {
+
+color: #E0B0FF;
+
+}
+
+button:focus {
+  background-color: orange;
+}
+
+.topbutton:focus {
+  background-color:orange;
+}
+
+
+.topbutton {
+
+  align-content: center;
+  width: 480px;
+  background-color: 	#E0B0FF;
+  border: 	#E0B0FF;
+  color: white;
+  font-family:"Lucida Console", "Courier New", monospace;
+  display:block;
+  padding: 14px 30px;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+
 ul{
   font-family: 'Arial Narrow Bold', sans-serif;
   font-size: 20px;
-  
 
 }
+
+li {
+color: white;
+}
+
 
 /*---------------About Section Below----------------*/
 
@@ -246,9 +291,18 @@ ul{
   grid-auto-flow: row;
 }
 
-.about-top { grid-area: 2 / 2 / 3 / 6; }
+.about-top { grid-area: 2 / 2 / 3 / 6; 
 
-.about-body { grid-area: 3 / 2 / 6 / 6; }
+
+}
+
+.about-body { grid-area: 3 / 2 / 6 / 6; 
+  background-color: black;
+  border-width: 3px;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: white;
+}
 
 .about-image { grid-area: 3 / 2 / 5 / 4; }
 
