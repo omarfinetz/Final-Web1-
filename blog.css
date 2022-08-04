@@ -304,6 +304,23 @@ color: white;
   border-color: white;
 }
 
+.aboutme {
+
+color: white;
+font-family: "Lucida Console", "Courier New", monospace;
+font-size: 14px;
+}
+
+.abouthomebutton {
+border-top-right-radius: 25px;
+
+border-bottom-right-radius: 15px;
+
+border-top-left-radius: 30px;
+
+
+}
+
 .about-image { grid-area: 3 / 2 / 5 / 4; }
 
 .about-text { grid-area: 3 / 4 / 6 / 6; }
