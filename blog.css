@@ -41,6 +41,14 @@ height: 76px;
   .blogpost { grid-area: blogpost; 
   background-color: white;
   }
+
+ .logo {
+
+width: 200px;
+height: 200px;
+margin-left: 150px;
+margin-top: 80px;
+ } 
   
 table {
 
@@ -50,17 +58,23 @@ border-color: white;
 
 td {
   padding-left: 70px;
-  color: 	#E0B0FF;
   font-size: 21px; 
+  color:#E0B0FF;
 }
 
-td:link {
+link {
+color: white;
+
+
+}
+
+.bloglink:link {
   color: #7b03cb; 
   background-color: transparent; 
   text-decoration: none;
 }
 
-td:visited {
+.bloglinktd:visited {
   color: #ff1493;
   background-color: transparent;
   text-decoration: none;
@@ -83,8 +97,8 @@ td:visited {
     width: 320px;
     padding: 10px;
     border: 5px solid white;
-    margin-top: 400px;
-    margin-left: 100px;
+    margin-top: 96px;
+    margin-left: 70px;
     background-color: black;
     border-radius: 8px;
   
@@ -161,6 +175,12 @@ flex-wrap:inherit
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.bloglink:hover {
+
+  background-color: #ff1493;
+
 }
 
 /*-------------------homepage below-----------------------------*/
@@ -243,11 +263,11 @@ color: #E0B0FF;
 
 }
 
-button:focus {
+button:hover {
   background-color: orange;
 }
 
-.topbutton:focus {
+.topbutton:hover {
   background-color:orange;
 }
 
@@ -321,8 +341,30 @@ border-top-left-radius: 30px;
 
 }
 
-.about-image { grid-area: 3 / 2 / 5 / 4; }
+.about-image { grid-area: 3 / 2 / 5 / 4; 
 
-.about-text { grid-area: 3 / 4 / 6 / 6; }
+display: block;
+margin-left: 60px;
+margin-top: 40px;
 
+}
 
+.about-text { grid-area: 3 / 4 / 6 / 6; 
+
+margin-top: 40px;
+margin-right: 20px;
+}
+
+.imagesources {
+
+margin-top: 55px;
+
+}
+
+.source {
+
+color: white;
+font-family: monospace;
+font-size: small;
+
+}
