@@ -219,6 +219,13 @@ color: white;
 
 }
 
+h3 {
+
+text-align: center;
+color: #ff1493;
+
+}
+
 .homebanner { grid-area: homebanner;
 border-bottom: #E0B0FF; 
 border-width: 4px;
@@ -226,7 +233,7 @@ align-items: center;
 }
 
 .bannerlucky {
-
+  display: block;
   size: 250%;
   border-radius: 10px;
   }
